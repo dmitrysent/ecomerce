@@ -6,12 +6,12 @@ html  {
 *::before,
 *::after{
     box-sizing:inherit;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
 
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -31,41 +31,51 @@ a {
     text-align: right;
     padding-top: 130px;
     background: url('../images/bg/header2.jpg') center center/cover no-repeat;
-    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     color: #fff;
     h1 {
-        font-size: 64px;
+        font-size: 68px;
+        font-weight: 400;
         text-transform: uppercase;
-        
+        letter-spacing: 10px;
     }
     h2{
-        margin-top: 30px;
-        font-size: 34px;
+        margin-top: 15px;
+        font-size: 38px;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 300;
+        letter-spacing: 10px;
+        padding-right: 3px;
+    }
+    &__text {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 15px;
+        letter-spacing: 3px;
+        padding-right: 10px;
     }
     &__phone {
-        margin-top: 30px;
+        margin-top: 65px;
         font-size: 22px;
         text-decoration: none;
+        letter-spacing: 4px;
+        font-weight: 300;
+        padding-right: 7px;
         &:hover {
-            color: #929090;
+            color: #c5c5c5;
         }
     }
 }
 
-.social {
+.header__social {
     display: flex;
     align-items: center;
-}
-
-.header__social {
-    padding: 60px 0 20px 50px;
+    padding: 25px 0 25px 50px;
     justify-content: flex-end;
 }
 
 .social__link {
-    margin: 0 5px;
+    margin: 0 8px;
 }
 
 .event {
@@ -76,11 +86,11 @@ a {
         text-transform: uppercase;
         font-size: 32px;
         color: rgb(6, 58, 47);
-        font-weight: 600;
+        font-weight: 400;
     }
     &__subtitle {
         margin-top: 25px;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 20px;
     }
     &__inner {
@@ -94,21 +104,17 @@ a {
         width: 380px;
         position: relative;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 400;
         color: #fff;
-        // padding-left: 5px;
-        
         transition: all .5s;
         box-shadow: 7px 7px 15px #929090;
 
         img {
             width: 100%;;
-            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../images/event/1.jpg');
         }
         &-1 {
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(32, 32, 32) 100%), url('../images/event/2.1.jpg');
             background-size: cover;
-            // background-position: center;
         } 
         &-2 {
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(24, 24, 24) 100%), url('../images/event/1.jpg');
@@ -138,7 +144,7 @@ a {
             text-transform: uppercase;
             letter-spacing: 4px;
             line-height: 44px;
-            font-weight: 600;
+            font-weight: 400;
         }
         &-text {
             margin-top: 15px;
@@ -161,11 +167,17 @@ a {
         background-color: #246038;
         color: #fff;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 300;
         text-align: center;
         border-radius: 4px;
         border: none;
         cursor: pointer;
+        transition: all .5s;
+        &:hover {
+            background-color: #fff;
+            color: #246038;
+            border: 1px solid #246038;
+        }
     }
     &__hr {
         margin-top: 30px;
@@ -177,7 +189,6 @@ a {
     height: 800px;
     color: black;
     text-align: center;
-    // background-color: #f0f0f0;
     &__title {
         text-transform: uppercase;
         font-size: 32px;
@@ -205,7 +216,7 @@ a {
         margin-top: 35px;
         width: 220px;
         height: 50px;
-        background-color: #246038;
+        background-color: #1b3f27;
         color: #fff;
         text-transform: uppercase;
         font-weight: 600;
@@ -214,6 +225,13 @@ a {
         border: none;
         cursor: pointer;
         display: block;
+        transition: all .5s;
+        &:hover {
+            background-color: #fff;
+            color: #246038;
+            border: 1px solid #246038;
+            box-shadow:  2px 2px 10px #246038;
+        }
     }
     
     .slick-dots {
@@ -250,21 +268,31 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    // background-color: #5e705f;
+    
     a {
         display: block;
         width: 25%;
-}
-
-
+        padding: 5px 5px;
+        transition: all .1s;
+        &:hover {
+            padding: 2px 2px;
+        }
+    }
     img {
         width: 100%;
+        transition: all .5s;
+        cursor: zoom-in;
+        &:hover {
+            box-shadow:  9px 9px 18px #094b2a;
+        }
     }
 }
 
 .form {
     height: 820px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 150px;
     background: url(../images/form/form1.jpg) center/cover no-repeat;
     &__title {
         font-size: 22px;
@@ -279,24 +307,13 @@ a {
         align-items: center;
     }
     img {
-        // display: block;
         width: 100%;
     }
-    // form {
-    //     display: block;
-    //     width: 50%;
-    //     width: 600px;
-    //     height: 466px;
-    //     // background: #072c17;
-    //     // padding: 50px 75px 57px;
-    //     text-align: center;
-    // }
     &__input {
     
-        width: 32px;
+        width: 300px;
         height: 55px;
         border: 1px solid #fff;
-        // background: #21062A;
         margin-bottom: 12px;
         background-color: transparent;
         display: block;
@@ -317,7 +334,7 @@ a {
     &__btn {
         margin: 0 auto;
         margin-top: 25px;
-        width: 320px;
+        width: 300px;
         height: 55px;
         background-color: #22492f;
         text-transform: uppercase;
@@ -329,6 +346,12 @@ a {
         padding: 18px 0 18px 0;
         display: block;
         color: #fff;
+        transition: all .5s;
+        &:hover {
+            background-color: #fff;
+            color: #246038;
+            border: 1px solid #246038;
+        }
     }
 }
 
