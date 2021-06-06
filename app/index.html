@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Павел Елисейкин - ведущий вашего праздника 
-    </title>
+    <title>Ведущий мероприятий Павел Елисейкин в Иваново</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -36,14 +35,8 @@
             </div>
         </div>
     </header>
-
-     <section class="about">
-
-    </section>
-
     <section class="event">
         <div class="container">
-            
             <h2 class="event__title">Ваше мероприятие</h2>
             <p class="event__subtitle">На какое мероприятие вы хотите пригласить ведущего? Предлагаю выбрать то, что планируется у Вас.</p>
             <div class="event__inner">
@@ -76,7 +69,7 @@
                         </h3>
                         <hr>
                         <p class="event__item-text">
-                            Мероприятие вашего коллектива: день рождения компании, новогоднее мероприятие и др. Море музыки, танцев и незабываемых эмоций.
+                            Мероприятие вашего коллектива: день рождения компании, новогоднее мероприятие. Море музыки, танцев и незабываемых эмоций.
                         </p>                        
                     </div>
                 </div>
@@ -84,28 +77,22 @@
             <a href="#form" class="event__button">Забронировать дату</a>
         </div> 
     </section>
-
-   
-    <section class="content">
+    <div class="content">
         <div class="popup-gallery">
             <a href="images/content/1.jpg" rel="alternate"><img src="images/content/1.jpg" alt="" /></a>
             <a href="images/content/4.jpg" rel="alternate"><img src="images/content/4.jpg" alt="" /></a>
             <a href="images/content/3.jpg" rel="alternate"><img src="images/content/3.jpg" alt="" /></a>
             <a href="images/content/2.jpg" rel="alternate"><img src="images/content/2.jpg" alt="" /></a>
-
             <a href="images/content/5.jpg" rel="alternate"><img src="images/content/5.jpg" alt="" /></a>
             <a href="images/content/7.jpg" rel="alternate"><img src="images/content/7.jpg" alt="" /></a>
             <a href="images/content/6.jpg" rel="alternate"><img src="images/content/6.jpg" alt="" /></a>
             <a href="images/content/8.jpg" rel="alternate"><img src="images/content/8.jpg" alt="" /></a>
-
             <a href="images/content/9.jpg" rel="alternate"><img src="images/content/9.jpg" alt="" /></a>
             <a href="images/content/10.jpg" rel="alternate"><img src="images/content/10.jpg" alt="" /></a>
             <a href="images/content/11.jpg" rel="alternate"><img src="images/content/11.jpg" alt="" /></a>
             <a href="images/content/12.jpg" rel="alternate"><img src="images/content/12.jpg" alt="" /></a>
-
         </div>
-    </section>
-
+    </div>
     <section class="reviews">
         <div class="container">
             <h2 class="reviews__title">Отзывы</h2>
@@ -133,30 +120,27 @@
                     <img src="images/reviews/7.1.jpg" alt="#">
                 </div>
             </div>
-            
             <a class="reviews__button" href="https://www.instagram.com/stories/highlights/17962261087303303/" target="_blank">Больше отзывов</a>
-            
         </div>
     </section>
-
-
      <section class="form" id="form">
         <div class="container">
             <div class="form__inner">
                 <form>
                     <h2 class="title form__title">Забронировать дату</h2>
-                    <input class="form__input" type="text" placeholder="Как Вас зовут?">
-                    <input class="form__input" type="text" placeholder="Ваше мероприятие - это ...">
-                    <input class="form__input" type="text" placeholder="Дата вашего торжества?">
-                    <input class="form__input" type="tel" placeholder="Ваш номер телефона">
+                    <input class="form__input" name="name" type="text" placeholder="Как Вас зовут?">
+                    <input class="form__input" name="event" type="text" placeholder="Ваше мероприятие - это ...">
+                    <input class="form__input" name="date" type="text" placeholder="Дата вашего торжества?">
+                    <input class="form__input" name="phone" type="tel" placeholder="Ваш номер телефона">
                     <button class="form__btn button" type="submit">Отправить заявку</button>
                 </form>
             </div>
         </div>
     </section> 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src=js/libs.min.js></script>
+    <script src=js/jquery.validate.min.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
     <script src=js/main.js></script>
 </body>
 </html>
